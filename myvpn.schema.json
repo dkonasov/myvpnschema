@@ -1,5 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/dkonasov/myvpnschema/refs/heads/main/myvpn.schema.json",
     "title": "MyVPN Configuration",
     "type": "object",
     "properties": {
