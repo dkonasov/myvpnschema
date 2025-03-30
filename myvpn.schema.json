@@ -19,7 +19,9 @@
                 "serverName": {
                     "type": "string"
                 }
-            }
+            },
+            "required": ["host", "port", "publicKey", "serverName"],
+            "additionalProperties": false
         },
         "clients": {
             "type": "array",
@@ -35,8 +37,12 @@
                     "sid": {
                         "type": "string"
                     }
-                }
+                },
+                "required": ["name", "id", "sid"],
+                "additionalProperties": false
             }
         }
-    }
+    },
+    "required": ["server", "clients"],
+    "additionalProperties": false
 }
