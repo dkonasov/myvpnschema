@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "MyVPN Configuration",
+    "type": "object",
+    "properties": {
+        "server": {
+            "type": "object",
+            "properties": {
+                "host": {
+                    "type": "string"
+                },
+                "port": {
+                    "type": "integer"
+                },
+                "publicKey": {
+                    "type": "string"
+                },
+                "serverName": {
+                    "type": "string"
+                }
+            }
+        },
+        "clients": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "sid": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
